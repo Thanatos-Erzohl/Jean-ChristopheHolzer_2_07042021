@@ -1,0 +1,43 @@
+/* === :root =================================================================================== */
+	:root
+	{
+		--color-1: #0065FC; /* blue */
+		--color-2: #DEEBFF; /* light bue */
+		--color-3: #F2F2F2; /* gray */
+
+		--pictogram-width: 24px;
+		--pictogram-height: 24px;
+
+		--border-radius: 12px;
+	}
+/* === end: :root ============================================================================== */
+
+/* === @font-face ============================================================================== */
+	@font-face
+	{
+		font-family: 'raleway';
+		src: url('data/font/raleway/raleway.ttf') format('truetype');
+	}
+/* === end: @font-face ========================================================================= */
+
+/* === general marker ========================================================================== */
+*
+{
+	box-sizing: border-box;
+
+	padding: 0px;
+	margin: 0px;
+
+	font-family: raleway, serif;
+	color: rgb(0, 0, 0);
+}
+
+html
+{
+	width: 100%;
+
+	background-color: rgb(255, 255, 255);
+
+	font-size: 1em;
+}
+/* === end: general marker ===================================================================== */
