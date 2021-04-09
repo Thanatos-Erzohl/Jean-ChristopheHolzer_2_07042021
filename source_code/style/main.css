@@ -7,8 +7,10 @@
 
 		--pictogram-width: 24px;
 		--pictogram-height: 24px;
+		--pictogram-small-width: 16px;
+		--pictogram-small-height: 16px;
 
-		--border-radius: 10px;
+		--border-radius: 12px;
 	}
 /* === end: :root ================================================================================================================================ */
 
