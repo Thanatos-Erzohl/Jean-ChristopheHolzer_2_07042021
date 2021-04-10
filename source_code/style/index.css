@@ -12,7 +12,7 @@
 
 			#search
 			{
-				padding: 0px 50px 50px 50px;
+				padding: 0px 50px;
 
 				display: flex;
 				flex-direction: column;
@@ -20,7 +20,7 @@
 
 			#search_bar
 			{
-				height: calc(var(--pictogram-height) + 50px);
+				height: calc(var(--pictogram-height) + 56px);
 
 				display: flex;
 				flex-direction: row;
@@ -29,10 +29,10 @@
 
 			#search_bar > img
 			{
-				height: calc(var(--pictogram-height) + 20px);
-				width: calc(var(--pictogram-width) + 20px);
+				height: calc(var(--pictogram-height) + 26px);
+				width: calc(var(--pictogram-width) + 26px);
 
-				padding: 10px;
+				padding: 16px;
 
 				border-radius: var(--border-radius) 0px 0px var(--border-radius);
 
@@ -41,7 +41,7 @@
 
 			#search_bar > input[type = "search"]
 			{
-				height: calc(var(--pictogram-height) + 20px);
+				height: calc(var(--pictogram-height) + 26px);
 
 				padding: 0em 1em;
 
@@ -56,7 +56,7 @@
 
 			#search_bar > button
 			{
-				height: calc(var(--pictogram-height) + 20px);
+				height: calc(var(--pictogram-height) + 26px);
 
 				padding: 0em 1em;
 
@@ -71,10 +71,10 @@
 
 			#search_bar > button > img
 			{
-				height: calc(var(--pictogram-height) + 20px);
-				width: calc(var(--pictogram-width) + 20px);
+				height: calc(var(--pictogram-height) + 26px);
+				width: calc(var(--pictogram-width) + 26px);
 
-				padding: 10px;
+				padding: 16px;
 
 				display: none;
 			}
@@ -96,10 +96,14 @@
 				display: flex;
 				flex-direction: row;
 				justify-content: flex-start;
-				align-items: center;
 			}
 
-			#filter > p{margin-right: 25px; }
+			#filter > p
+			{
+				padding-top: calc(((var(--pictogram-height) + 26px) - 1em) / 2);
+				margin-right: 25px;
+				margin-bottom: 10px;
+			}
 
 			#filter-list
 			{
@@ -113,15 +117,7 @@
 
 			#filter-list > li
 			{
-				height: calc(var(--pictogram-height) + 20px);
-
-				margin-right: 25px;
-
-				border-top: 2px solid rgb(217, 217, 217);
-				border-right: 2px solid rgb(217, 217, 217);
-				border-bottom: 2px solid rgb(217, 217, 217);
-
-				border-radius: calc((var(--pictogram-height) + 20px) / 2);
+				margin: 0px 25px 10px 0px;
 
 				display: flex;
 				flex-direction: row;
@@ -129,43 +125,99 @@
 				align-items: center;
 			}
 
-			#filter-list > li > input[type = "checkbox"]:checked + label > div { border-color: var(--color-1); }
+			#filter-list > li > input[type = "checkbox"]:checked + label
+			{
+				background: var(--color-2);
+
+				flex-direction: row-reverse;
+			}
+
+			#filter-list > li > input[type = "checkbox"]:checked + label > span:nth-child(1)
+			{
+				background-color: rgb(217, 217, 217);
+
+				border-color: rgb(217, 217, 217);
+			}
 
 			#filter-list > li > label:hover{ cursor: pointer; }
 
-			#filter-list > li > label:hover > span{ color: var(--color-1); }
+			#filter-list > li > label:hover > span:nth-child(1){ border-color: var(--color-1) !important; }
+
+			#filter-list > li > label:hover > span:nth-child(2){ color: var(--color-1) !important; }
 
 			#filter-list > li > input{ display: none; }
 
 			#filter-list > li > label
 			{
+				height: calc(var(--pictogram-height) + 26px);
+
+				border: 2px solid rgb(217, 217, 217);
+
+				border-radius: calc((var(--pictogram-height) + 26px) / 2);
+
 				display: flex;
 				flex-direction: row;
 				justify-content: flex-start;
 				align-items: center;
 			}
 
-			#filter-list > li > label > div
+			#filter-list > li > label > span:nth-of-type(1)
 			{
-				padding: 8px;
+				padding: 11px;
+				margin-left: -3px;
+				margin-right: -3px;
 
 				border: 2px solid var(--color-2);
 
-				border-radius: calc((var(--pictogram-height) + 20px) / 2);
+				border-radius: calc((var(--pictogram-height) + 26px) / 2);
 
 				background-color: var(--color-2);
 
 				display: flex;
 			}
 
-			#filter-list > li > label div > img
+			#filter-list > li > label > span > img
 			{
 				height: var(--pictogram-height);
 				width: var(--pictogram-width);
 			}
 
-			#filter-list > li > label > span{ padding: 0px 1em; }
+			#filter-list > li > label > span:nth-of-type(2){ padding: 0px 1em; }
 		/* === end: filter ======================================================================================================================= */
+
+		/* === info ============================================================================================================================== */
+			#info
+			{
+				padding-top: 30px;
+				padding-bottom: 40px;
+
+				display: flex;
+				flex-direction: row;
+				justify-content: flex-start;
+			}
+
+			#info > span
+			{
+				height: calc(var(--pictogram-small-height) + 14px);
+				width: calc(var(--pictogram-small-width) + 14px);
+
+				padding: 6px;
+				margin-top: calc(0px - ((var(--pictogram-small-height) + 14px - 1rem) / 2)); /* pour que le i reste aligné sur la ligne superieur du texte */
+				margin-right: 10px;
+
+				border: 1px solid rgb(217, 217, 217);
+
+				border-radius: calc((var(--pictogram-small-height) + 14px) / 2);
+
+				display: flex;
+			}
+
+			#info > span > img
+			{
+				height: var(--pictogram-small-height);
+				width: var(--pictogram-small-width);
+			}
+		/* ===  end: info ======================================================================================================================== */
 	/* === end: search =========================================================================================================================== */
 /* === end: index ================================================================================================================================ */
 
@@ -176,7 +228,7 @@
 			/* === search_bar ==================================================================================================================== */
 				#search
 				{
-					padding: 0px 20px 30px 20px;
+					padding: 0px 20px;
 				}
 
 				#search_bar > input[type = "search"]
@@ -206,7 +258,9 @@
 					align-items: flex-start;
 				}
 
-				#filter-list > li{ margin: 10px 10px 0px 0px; }
+				#filter > p{ padding-top: 0px; }
+
+				#filter-list > li{ margin: 0px 10px 10px 0px; }
 			/* === end: filter =================================================================================================================== */
 		/* === end: search ======================================================================================================================= */
 	}

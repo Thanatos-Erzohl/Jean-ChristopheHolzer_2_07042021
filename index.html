@@ -25,7 +25,7 @@
 				<div id = "navigation">
 					<!-- === website'semblem ================================================================================================================= -->
 						<a id = "website-emblem" href = "index.html">
-							<img src = "data/picture/emblem/reservia.svg">
+							<img src = "data/picture/emblem/reservia.svg" alt = "Emblème Reservia">
 						</a>
 					<!-- === end: website'semblem ============================================================================================================ -->
 
@@ -58,15 +58,15 @@
 
 		<main>
 			<!-- === search ================================================================================================================================== -->
-				<section id = "search">
+				<div id = "search">
 					<!-- === search bar ====================================================================================================================== -->
-						<form id = "search_bar" method = "post" action = "">
-							<img class = "pictogram" src = "data/picture/pictogram/map-marker-alt-solid.svg">
+						<form id = "search_bar" method = "post" action = "#">
+							<img class = "pictogram" src = "data/picture/pictogram/map-marker-alt-solid.svg" alt = "">
 
 							<input type = "search" name = "location" size = "20" maxlength = "32" placeholder = "Marseille, France">
 
 							<button type = "submit" name = "submit">
-								<img class = "pictogram" src = "data/picture/pictogram/search-solid.svg">
+								<img class = "pictogram" src = "data/picture/pictogram/search-solid.svg" alt = "">
 
 								<span>Rechercher</span>
 							</button>
@@ -74,7 +74,7 @@
 					<!-- === end: search bar ================================================================================================================= -->
 
 					<!-- === filter ========================================================================================================================== -->
-						<form id = "filter" method = "post" action = "">
+						<form id = "filter" method = "post" action = "#">
 							<p>Filtres</p>
 
 							<ul id = filter-list>
@@ -82,7 +82,7 @@
 									<input id = "filter-economic" type = "checkbox" name = "economic">
 
 									<label for = "filter-economic">
-										<div><img class = "pictogram" src = "data/picture/pictogram/money-bill-wave-solid.svg"></div>
+										<span><img class = "pictogram" src = "data/picture/pictogram/money-bill-wave-solid.svg" alt = ""></span>
 
 										<span>Économique</span>
 									</label>
@@ -91,7 +91,7 @@
 									<input id = "filter-family" type = "checkbox" name = "family">
 
 									<label for = "filter-family">
-										<div><img class = "pictogram" src = "data/picture/pictogram/child-solid.svg"></div>
+										<span><img class = "pictogram" src = "data/picture/pictogram/child-solid.svg" alt = ""></span>
 
 										<span>Familial</span>
 									</label>
@@ -100,7 +100,7 @@
 									<input id = "filter-romantic" type = "checkbox" name = "romantic">
 
 									<label for = "filter-romantic">
-										<div><img class = "pictogram" src = "data/picture/pictogram/heart-solid.svg"></div>
+										<span><img class = "pictogram" src = "data/picture/pictogram/heart-solid.svg" alt = ""></span>
 
 										<span>Romantique</span>
 									</label>
@@ -109,7 +109,7 @@
 									<input id = "filter-authorized_animal" type = "checkbox" name = "authorized_animal">
 
 									<label for = "filter-authorized_animal">
-										<div><img class = "pictogram" src = "data/picture/pictogram/dog-solid.svg"></div>
+										<span><img class = "pictogram" src = "data/picture/pictogram/dog-solid.svg" alt = ""></span>
 
 										<span>Animaux autorisés</span>
 									</label>
@@ -117,7 +117,15 @@
 							</ul>
 						</form>
 					<!-- === end: filter ===================================================================================================================== -->
-				</section>
+
+					<!-- === info ============================================================================================================================ -->
+						<div id = "info">
+							<span><img class = "pictogram-small" src = "data/picture/pictogram/info-solid.svg" alt = ""></span>
+
+							<p>Plus de 500 logements sont disponibles dans cette ville</p>
+						</div>
+					<!-- === end: info ======================================================================================================================= -->
+				</div>
 			<!-- === end: search ============================================================================================================================= -->
 
 			<!-- === accommodation =========================================================================================================================== -->
