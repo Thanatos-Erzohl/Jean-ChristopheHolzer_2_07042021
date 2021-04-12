@@ -219,9 +219,267 @@
 			}
 		/* ===  end: info ======================================================================================================================== */
 	/* === end: search =========================================================================================================================== */
+
+	/* === accommodation ========================================================================================================================= */
+		#accommodation
+		{
+			width: 100%;
+
+			padding: 0px 50px 60px 50px;
+
+			display: flex;
+			flex-direction: row;
+			justify-content: space-between;
+		}
+
+		.price{ font-weight: bold; }
+
+		.notation
+		{
+			display: flex;
+			flex-direction: row;
+			justify-content: flex-start;
+			align-items: flex-end;
+
+			flex: 1;
+		}
+
+		.notation > img
+		{
+			width: var(--pictogram-small-width);
+			height: var(--pictogram-small-height);
+		}
+
+		/* === searched accommodation ============================================================================================================ */
+			#accommodation-search
+			{
+				width: 68%;
+
+				padding: 50px 40px;
+				margin-right: 40px;
+
+				border-radius: var(--border-radius);
+
+				background-color: var(--color-3);
+
+				display: flex;
+				flex-direction: column;
+				justify-content: flex-start;
+			}
+
+			#accommodation-search > p{ font-weight: bold; }
+
+			#accommodation-search > p:hover{ cursor: pointer; }
+
+			#accommodation-search-card_area
+			{
+				display: flex;
+				flex-direction: row;
+				justify-content: space-between;
+				flex-wrap: wrap;
+				row-gap: 30px;
+
+				margin: 25px 0px 40px 0px;
+			}
+
+			.accommodation-search-card
+			{
+				width: calc((100% - 60px) / 3);
+
+				padding: 5px;
+
+				background-color: white;
+
+				border-radius: var(--border-radius);
+
+				box-shadow: 10px 10px 10px rgb(217, 217, 217);
+
+				text-decoration: none;;
+
+				display: flex;
+				flex-direction: column;
+				justify-content: flex-start;
+			}
+
+			.accommodation-search-card-illustration
+			{
+				width: 100%;
+				padding-bottom: 47%;
+
+				border-radius: var(--border-radius) var(--border-radius) 0px 0px;
+			}
+
+			#accommodation-search-card-1
+			{
+				background-image: url("../../data/picture/accommodation/2_large/marcus-loke-WQJvWU_HZFo-unsplash.jpg");
+			    background-size: cover;
+			    background-position: center center;
+			}
+
+			#accommodation-search-card-2
+			{
+				background-image: url("../../data/picture/accommodation/2_large/fred-kleber-gTbaxaVLvsg-unsplash.jpg");
+			    background-size: cover;
+			    background-position: center center;
+			}
+
+			#accommodation-search-card-3
+			{
+				background-image: url("../../data/picture/accommodation/2_large/reisetopia-B8WIgxA_PFU-unsplash.jpg");
+			    background-size: cover;
+			    background-position: center center;
+			}
+
+			#accommodation-search-card-4
+			{
+				background-image: url("../../data/picture/accommodation/2_large/annie-spratt-Eg1qcIitAuA-unsplash.jpg");
+			    background-size: cover;
+			    background-position: center center;
+			}
+
+			#accommodation-search-card-5
+			{
+				background-image: url("../../data/picture/accommodation/2_large/nicate-lee-kT-ZyaiwBe0-unsplash.jpg");
+			    background-size: cover;
+			    background-position: center center;
+			}
+
+			#accommodation-search-card-6
+			{
+				background-image: url("../../data/picture/accommodation/2_large/febrian-zakaria-M6S1WvfW68A-unsplash.jpg");
+			    background-size: cover;
+			    background-position: center center;
+			}
+
+			.accommodation-search-card p:nth-of-type(1)
+			{
+				padding: 0.5rem 0rem;
+
+				font-weight: bold;
+			}
+
+			.accommodation-search-card p:nth-of-type(2){ padding-bottom: 0.5rem }
+		/* === end: searched accommodation ======================================================================================================= */
+
+		/* === popular accommodation ============================================================================================================= */
+			#accommodation-popular
+			{
+				width: 32%;
+
+				padding: 50px 40px;
+
+				border-radius: var(--border-radius);
+
+				background-color: var(--color-3);
+
+				display: flex;
+				flex-direction: column;
+				justify-content: flex-start;
+			}
+
+			#accommodation-popular div:first-child
+			{
+				display: flex;
+				flex-direction: row;
+				justify-content: space-between;
+			}
+
+			#accommodation-popular div:first-child > img
+			{
+				width: var(--pictogram-width);
+				height: var(--pictogram-height);
+			}
+
+			#accommodation-popular-card_area
+			{
+				margin-top: 25px;
+
+				display: flex;
+				flex-direction: column;
+				justify-content: space-between;
+			}
+
+			#accommodation-popular-card_area > a:nth-child(2){ margin: 25px 0px; }
+
+			.accommodation-popular-card
+			{
+				width: 100%;
+
+				padding: 5px;
+
+				background-color: white;
+
+				border-radius: var(--border-radius);
+
+				box-shadow: 10px 10px 10px rgb(217, 217, 217);
+
+				text-decoration: none;;
+
+				display: flex;
+				flex-direction: row;
+				justify-content: flex-start;
+			}
+
+			.accommodation-popular-card-illustration
+			{
+				width: 40%;
+				padding-bottom: 40%;
+
+				border-radius: var(--border-radius) 0px 0px var(--border-radius);
+			}
+
+			.accommodation-popular-card > div:last-child
+			{
+				width: 60%;
+
+				padding: 10px 15px;
+
+				display: flex;
+				flex-direction: column;
+				justify-content: flex-start;
+			}
+
+			.accommodation-popular-card > div:last-child > p:first-child
+			{
+				padding-bottom: 0.5em;
+
+				font-weight: bold;
+			}
+
+			#accommodation-popular-card-1
+			{
+				background-image: url("../../data/picture/accommodation/2_large/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg");
+			    background-size: cover;
+			    background-position: center center;
+			}
+
+			#accommodation-popular-card-2
+			{
+				background-image: url("../../data/picture/accommodation/2_large/aw-creative-VGs8z60yT2c-unsplash.jpg");
+			    background-size: cover;
+			    background-position: center center;
+			}
+
+			#accommodation-popular-card-3
+			{
+				background-image: url("../../data/picture/accommodation/2_large/febrian-zakaria-sjvU0THccQA-unsplash.jpg");
+			    background-size: cover;
+			    background-position: center center;
+			}
+		/* === end: popular accommodation ======================================================================================================== */
+	/* === end: accommodation ==================================================================================================================== */
 /* === end: index ================================================================================================================================ */
 
 /* === media ===================================================================================================================================== */
+	@media all and (min-width: 769px) and (max-width: 1500px) /* 2 colonnes dans hébergement */
+	{
+		/* === accommodation ===================================================================================================================== */
+			/* === searched accommodation ======================================================================================================== */
+				.accommodation-search-card{ width: calc((100% - 30px) / 2); }
+			/* === end: searched accommodation =================================================================================================== */
+		/* === end: accommodation ================================================================================================================ */
+	}
+
 	@media all and (max-width: 768px)
 	{
 		/* === search ============================================================================================================================ */
@@ -263,5 +521,61 @@
 				#filter-list > li{ margin: 0px 10px 10px 0px; }
 			/* === end: filter =================================================================================================================== */
 		/* === end: search ======================================================================================================================= */
+
+		/* === accommodation ===================================================================================================================== */
+			#accommodation
+			{
+				padding: 0px 0px 60px 0px;
+
+				flex-direction: column-reverse;
+				justify-content: flex-start;
+			}
+
+			/* === searched accommodation ======================================================================================================== */
+				#accommodation-search
+				{
+					width: 100%;
+
+					padding: 50px 20px 0px 20px;
+					margin-right: 0px;
+
+					background-color: #00000000;
+				}
+
+				#accommodation-search-card_area{ row-gap: 15px; }
+
+				#accommodation-search-card-1{ background-image: url("../../data/picture/accommodation/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg"); }
+
+				#accommodation-search-card-2{ background-image: url("../../data/picture/accommodation/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg"); }
+
+				#accommodation-search-card-3{ background-image: url("../../data/picture/accommodation/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg"); }
+
+				#accommodation-search-card-4{ background-image: url("../../data/picture/accommodation/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg"); }
+
+				#accommodation-search-card-5{ background-image: url("../../data/picture/accommodation/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg"); }
+
+				#accommodation-search-card-6{ background-image: url("../../data/picture/accommodation/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg"); }
+
+				.accommodation-search-card{ width: 100%; }
+			/* === end: searched accommodation =================================================================================================== */
+
+			/* === popular accommodation ========================================================================================================= */
+				#accommodation-popular
+				{
+					width: 100%;
+
+					padding-right: 20px;
+					padding-left: 20px;
+
+					border-radius: 0px;
+				}
+
+				#accommodation-popular-card-1{ background-image: url("../../data/picture/accommodation/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg"); }
+
+				#accommodation-popular-card-2{ background-image: url("../../data/picture/accommodation/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg"); }
+
+				#accommodation-popular-card-3{ background-image: url("../../data/picture/accommodation/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg"); }
+			/* === end: popular accommodation ==================================================================================================== */
+		/* === end: accommodation ================================================================================================================ */
 	}
 /* === end: media ================================================================================================================================ */
