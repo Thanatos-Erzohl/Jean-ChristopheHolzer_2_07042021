@@ -413,7 +413,7 @@
 
 				box-shadow: 10px 10px 10px rgb(217, 217, 217);
 
-				text-decoration: none;;
+				text-decoration: none;
 
 				display: flex;
 				flex-direction: row;
@@ -439,12 +439,14 @@
 				justify-content: flex-start;
 			}
 
-			.accommodation-popular-card > div:last-child > p:first-child
+			.accommodation-popular-card > div:last-child > p:nth-of-type(1)
 			{
 				padding-bottom: 0.5em;
 
 				font-weight: bold;
 			}
+
+			.accommodation-popular-card > div:last-child > p:nth-of-type(2){ padding-bottom: 0.5em; }
 
 			#accommodation-popular-card-1
 			{
@@ -468,19 +470,199 @@
 			}
 		/* === end: popular accommodation ======================================================================================================== */
 	/* === end: accommodation ==================================================================================================================== */
+
+	/* === activity ============================================================================================================================== */
+		#activity
+		{
+			width: 100%;
+
+			padding: 0px 50px 60px 50px;
+
+			display: flex;
+			flex-direction: column;
+		}
+
+		#activity > h2{ margin-bottom: 30px; }
+
+		#activity-card_area
+		{
+			display: flex;
+			flex-direction: row;
+			justify-content: space-between;
+		}
+
+		#activity-card_area > div
+		{
+			display: flex;
+			flex-direction: column;
+			justify-content: space-between;
+		}
+
+		#activity-card_area > *{width: calc((100% - 120px) / 4); }
+
+		.activity-card
+		{
+			border-radius: var(--border-radius);
+
+			box-shadow: 10px 10px 10px rgb(217, 217, 217);
+
+			font-weight: bold;
+			text-decoration: none;
+		}
+
+		.activity-card > p{ padding: 1em; }
+
+		#activity-card-1 > .activity-card-illustration
+		{
+			padding-bottom: 130%;
+
+			border-radius: var(--border-radius) var(--border-radius) 0px 0px;
+
+			background-image: url("../../data/picture/activity/2_large/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg");
+			background-size: cover;
+			background-position: center;
+		}
+
+		#activity-card-2{ height: calc(58% - 20px); }
+
+		#activity-card-2 > .activity-card-illustration
+		{
+			height: calc(100% - 3em);
+
+			border-radius: var(--border-radius) var(--border-radius) 0px 0px;
+
+			background-image: url("../../data/picture/activity/2_large/paul-hermann-QFTrLdQIRhI-unsplash.jpg");
+			background-size: cover;
+			background-position: center;
+		}
+
+		#activity-card-3{ height: calc(42% - 20px); }
+
+		#activity-card-3 > .activity-card-illustration
+		{
+			
+			height: calc(100% - 3em);
+
+			border-radius: var(--border-radius) var(--border-radius) 0px 0px;
+
+			background-image: url("../../data/picture/activity/2_large/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg");
+			background-size: cover;
+			background-position: center;
+		}
+
+		#activity-card-4 > .activity-card-illustration
+		{
+			padding-bottom: 130%;
+
+			border-radius: var(--border-radius) var(--border-radius) 0px 0px;
+
+			background-image: url("../../data/picture/activity/2_large/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg");
+			background-size: cover;
+			background-position: center;
+		}
+
+		#activity-card-5, #activity-card-6{ height: calc(50% - 20px); }
+
+		#activity-card-5 > .activity-card-illustration
+		{
+			height: calc(100% - 3em);
+
+			border-radius: var(--border-radius) var(--border-radius) 0px 0px;
+
+			background-image: url("../../data/picture/activity/2_large/florian-wehde-xW9e8gdotxI-unsplash.jpg");
+			background-size: cover;
+			background-position: center;
+		}
+
+		#activity-card-6 > .activity-card-illustration
+		{
+			height: calc(100% - 3em);
+
+			border-radius: var(--border-radius) var(--border-radius) 0px 0px;
+
+			background-image: url("../../data/picture/activity/2_large/lena-paulin-wH2-EJoDcV0-unsplash.jpg");
+			background-size: cover;
+			background-position: center;
+		}
+	/* === end: activity ========================================================================================================================= */
 /* === end: index ================================================================================================================================ */
 
 /* === media ===================================================================================================================================== */
-	@media all and (min-width: 769px) and (max-width: 1500px) /* 2 colonnes dans hébergement */
+	@media all and (min-width: 870px) and (max-width: 1274px) /* point break for min-width accommodation card = 200px */
 	{
 		/* === accommodation ===================================================================================================================== */
+			#accommodation
+			{
+				flex-direction: column-reverse;
+				justify-content: flex-start;
+			}
+
 			/* === searched accommodation ======================================================================================================== */
-				.accommodation-search-card{ width: calc((100% - 30px) / 2); }
+				#accommodation-search
+				{
+					width: 100%;
+
+					margin: 30px 0px 0px 0px;
+				}
 			/* === end: searched accommodation =================================================================================================== */
+
+			/* === popular accommodation ========================================================================================================= */
+				#accommodation-popular{ width: 100%; }
+
+				#accommodation-popular-card_area{ flex-direction: row; }
+
+				.accommodation-popular-card
+				{
+					width: calc((100% - 60px) / 3);
+
+					border-radius: var(--border-radius);
+
+					flex-direction: column;
+				}
+
+				#accommodation-popular-card_area > a:nth-child(2){ margin: 0px; }
+
+				.accommodation-popular-card-illustration
+				{
+					width: 100%;
+					padding-bottom: 47%;
+
+					border-radius: var(--border-radius) var(--border-radius) 0px 0px;
+				}
+
+				.accommodation-popular-card > div:last-child
+				{
+					width: 100%;
+
+					padding: 0px;
+				}
+
+				.accommodation-popular-card > div:last-child > p:nth-of-type(1){ padding-top: 0.5em; }
+			/* === end: popular accommodation ==================================================================================================== */
 		/* === end: accommodation ================================================================================================================ */
+
+		/* === activity ========================================================================================================================== */
+			#activity-card_area > *{width: calc(50% - 20px); }
+
+			#activity-card_area
+			{
+				flex-direction: row;
+				flex-wrap: wrap;
+			}
+
+			#activity-card_area > div{ justify-content: flex-start; }
+
+			#activity-card-1, #activity-card-2, #activity-card-5{ margin-bottom: 40px; }
+
+			#activity-card-2, #activity-card-3{height: calc(50% - 40px);}
+
+			#activity-card-1 > .activity-card-illustration{ padding-bottom: 80%; }
+
+			#activity-card-4 > .activity-card-illustration{ padding-bottom: 80%; }
+		/* === end: activity ===================================================================================================================== */
 	}
 
-	@media all and (max-width: 768px)
+	@media all and (max-width: 869px) /* point break for min-width accommodation card = 200px */
 	{
 		/* === search ============================================================================================================================ */
 			/* === search_bar ==================================================================================================================== */
@@ -577,5 +759,57 @@
 				#accommodation-popular-card-3{ background-image: url("../../data/picture/accommodation/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg"); }
 			/* === end: popular accommodation ==================================================================================================== */
 		/* === end: accommodation ================================================================================================================ */
+
+		/* === activity ========================================================================================================================== */
+			#activity{ padding: 0px 20px 50px 20px; }
+
+			#activity-card_area{ flex-direction: column; }
+
+			#activity-card_area > *{width: 100%; }
+
+			#activity-card-1, #activity-card-2, #activity-card-3, #activity-card-4, #activity-card-5{ margin-bottom: 20px; }
+
+			#activity-card-1 > .activity-card-illustration
+			{
+				padding-bottom: 40%;
+
+				background-image: url("../../data/picture/activity/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg");
+			}
+
+			#activity-card-2 > .activity-card-illustration
+			{
+				padding-bottom: 40%;
+
+				background-image: url("../../data/picture/activity/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg");
+			}
+
+			#activity-card-3 > .activity-card-illustration
+			{
+				padding-bottom: 40%;
+
+				background-image: url("../../data/picture/activity/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg");
+			}
+
+			#activity-card-4 > .activity-card-illustration
+			{
+				padding-bottom: 40%;
+
+				background-image: url("../../data/picture/activity/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg");
+			}
+
+			#activity-card-5 > .activity-card-illustration
+			{
+				padding-bottom: 40%;
+
+				background-image: url("../../data/picture/activity/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg");
+			}
+
+			#activity-card-6 > .activity-card-illustration
+			{
+				padding-bottom: 40%;
+
+				background-image: url("../../data/picture/activity/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg");
+			}
+		/* === end: activity ===================================================================================================================== */
 	}
 /* === end: media ================================================================================================================================ */
