@@ -43,6 +43,8 @@
 
 		display: flex;
 		flex-direction: row;
+
+		cursor: pointer;
 	}
 
 	#website-menu > ul > li
