@@ -9,6 +9,7 @@
 		<meta name = "author" content = "Jean-Christophe Holzer">
 		<meta name = "description" content = "">
 		<meta name = "keyword" content = "">
+		<meta name = "viewport" content = "width = device-width, initial-scale = 1.0">
 
 		<title>Reservia</title>
 		<link rel = "icon" type = "image/png" href = "data/picture/emblem/reservia-short.svg">
@@ -45,14 +46,16 @@
 					<!-- === end: website's menu ============================================================================================================= -->
 
 					<!-- === website's login ================================================================================================================= -->
-						<a id = "website-login" href = "">S'inscrire</a>
+						<div id = "website-login">
+							<a href = "#">S'inscrire</a>
+						</div>
 					<!-- === end: website's login  =========================================================================================================== -->
 				</div>
 			<!-- === end: navigation ========================================================================================================================= -->
 
 			<!-- === website's motto ========================================================================================================================= -->
 				<div id = "website-motto">
-					<p>Trouvez votre hébergement pour des vacances de rêve</p>
+					<h1>Trouvez votre hébergement pour des vacances de rêve</h1>
 					<p>En plein centre ville ou en pleine nature</p>
 				</div>
 			<!-- === end: website's motto ==================================================================================================================== -->
@@ -65,7 +68,7 @@
 						<form id = "search_bar" method = "post" action = "#">
 							<img class = "pictogram" src = "data/picture/pictogram/map-marker-alt-solid.svg" alt = "">
 
-							<input type = "search" name = "location" size = "20" maxlength = "32" placeholder = "Marseille, France">
+							<input type = "search" name = "location" maxlength = "32" placeholder = "Marseille, France">
 
 							<button type = "submit" name = "submit">
 								<img class = "pictogram" src = "data/picture/pictogram/search-solid.svg" alt = "">
@@ -84,7 +87,7 @@
 									<input id = "filter-economic" type = "checkbox" name = "economic">
 
 									<label for = "filter-economic">
-										<span><img class = "pictogram" src = "data/picture/pictogram/money-bill-wave-solid.svg" alt = ""></span>
+										<span class = "filter-pictogram" id = "filter-pictogram-economic"></span>
 
 										<span>Économique</span>
 									</label>
@@ -93,7 +96,7 @@
 									<input id = "filter-family" type = "checkbox" name = "family">
 
 									<label for = "filter-family">
-										<span><img class = "pictogram" src = "data/picture/pictogram/child-solid.svg" alt = ""></span>
+										<span class = "filter-pictogram" id = "filter-pictogram-family"></span>
 
 										<span>Familial</span>
 									</label>
@@ -102,7 +105,7 @@
 									<input id = "filter-romantic" type = "checkbox" name = "romantic">
 
 									<label for = "filter-romantic">
-										<span><img class = "pictogram" src = "data/picture/pictogram/heart-solid.svg" alt = ""></span>
+										<span class = "filter-pictogram" id = "filter-pictogram-romantic"></span>
 
 										<span>Romantique</span>
 									</label>
@@ -111,7 +114,7 @@
 									<input id = "filter-authorized_animal" type = "checkbox" name = "authorized_animal">
 
 									<label for = "filter-authorized_animal">
-										<span><img class = "pictogram" src = "data/picture/pictogram/dog-solid.svg" alt = ""></span>
+										<span class = "filter-pictogram" id = "filter-pictogram-authorized_animal"></span>
 
 										<span>Animaux autorisés</span>
 									</label>
@@ -345,13 +348,13 @@
 
 					<ul>
 						<li>
-							<a href = "">Fonctionnement du site</a>
+							<a href = "#">Fonctionnement du site</a>
 						</li>
 						<li>
-							<a href = "">Conditions générales de vente</a>
+							<a href = "#">Conditions générales de vente</a>
 						</li>
 						<li>
-							<a href = "">Données et confidentialité</a>
+							<a href = "#">Données et confidentialité</a>
 						</li>
 					</ul>
 				</div>
@@ -363,10 +366,10 @@
 
 					<ul>
 						<li>
-							<a href = "">Charte qualité</a>
+							<a href = "#">Charte qualité</a>
 						</li>
 						<li>
-							<a href = "">Soumettre votre hôtel</a>
+							<a href = "#">Soumettre votre hôtel</a>
 						</li>
 					</ul>
 				</div>
@@ -378,10 +381,10 @@
 
 					<ul>
 						<li>
-							<a href = "">Centre d'aide</a>
+							<a href = "#">Centre d'aide</a>
 						</li>
 						<li>
-							<a href = "">Nous contacter</a>
+							<a href = "#">Nous contacter</a>
 						</li>
 					</ul>
 				</div>

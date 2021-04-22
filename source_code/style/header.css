@@ -1,4 +1,4 @@
-/* === header ==================================================================================================================================== */
+/* === header ===================================================================================================================================== */
 	header
 	{
 		width: 100%;
@@ -6,6 +6,7 @@
 		display: flex;
 		flex-direction: column;
 		justify-content: flex-start;
+		align-items: flex-start;
 	}
 
 	header a{ text-decoration: none; }
@@ -25,16 +26,7 @@
 	{
 		flex: 1;
 
-		padding-left: 50px;
-		padding-bottom: 13px;
-	}
-
-	#website-login
-	{
-		padding: 50px 50px 20px 25px;
-
-		font-weight: bold;
-		color: var(--color-1);
+		padding: 0px 25px 11px 50px; /* padding-bottom = padding-bottom (of: #website-menu > ul > li) - 4px (R of Reservia's emblem is under the alignment of the other letters ) */
 	}
 
 	#website-menu > ul
@@ -43,45 +35,43 @@
 
 		display: flex;
 		flex-direction: row;
+		justify-content: flex-end;
+		align-items: flex-start;
+		flex-wrap: wrap;
 
 		cursor: pointer;
 	}
 
 	#website-menu > ul > li
 	{
-		padding: 48px 25px 18px 25px; /* padding top & bottom = x - border */
+		padding: 48px 25px 13px 25px; /* padding-top = 50px - border-top
+		                                 padding-bottom = 15px - border-bottom */
 
 		border-top: 2px solid #00000000;
 		border-bottom: 2px solid #00000000;
 	}
 
-	#website-menu > ul > li:hover{ border-top-color: var(--color-1); }
+	#website-menu > ul > li:hover{ border-top-color: #0065FC; }
 
-	#website-menu > ul > li:hover a{ color: var(--color-1); }
+	#website-menu > ul > li:hover a{ color: #0065FC; }
 
-	#website-motto{ padding: 30px 50px 20px 50px; }
+	#website-login{ padding: 50px 50px 15px 25px; /* padding = padding of: #website-menu > ul > li */ }
 
-	#website-motto p:first-child
+	#website-login > a
 	{
-		padding-bottom: 0.5rem;
-
 		font-weight: bold;
-		font-size: 1.25rem;
+		color: #0065FC;
 	}
-/* === end: header =============================================================================================================================== */
 
-/* === media ===================================================================================================================================== */
-	@media all and (max-width: 869px)
+	#website-motto{ padding: 35px 50px 20px 50px; /* padding-top = 50px - padding-bottom of: #website-login */ }
+
+	#website-motto > h1{ padding-bottom: 0.5rem; }
+/* === end: header ================================================================================================================================ */
+
+/* === media ====================================================================================================================================== */
+	@media screen and (max-width: 869px)
 	{
 		#website-emblem{ padding-left: 20px; }
-
-		#website-login
-		{
-			padding-top: 30px;
-			padding-right: 20px;
-
-			order: 2;
-		}
 
 		#website-menu
 		{
@@ -94,9 +84,9 @@
 		{
 			width: 50%;
 
-			padding-top: 8px; /* padding top = 30px - padding-bottom of #login - border */
+			padding: 33px 20px 13px 20px; /* padding top = 50px - (padding-bottom of: #website-login) - border-top */
 
-			border-bottom-color: var(--color-3);
+			border-bottom-color: #F2F2F2;
 
 			text-align: center;
 		}
@@ -104,9 +94,16 @@
 		#website-menu > ul > li:hover
 		{
 			border-top-color: #00000000;
-			border-bottom-color: var(--color-1); 
+			border-bottom-color: #0065FC; 
 		}
 
-		#website-motto{ padding: 30px 20px;}
+		#website-login
+		{
+			padding-right: 20px;
+
+			order: 2;
+		}
+
+		#website-motto{ padding: 35px 20px 40px 20px; /* padding-top = 50px - padding-bottom of: #website-login */ }
 	}
-/* === end: media ================================================================================================================================ */
+/* === end: media ================================================================================================================================= */
